@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Input from './Input'
 import TextArea from './TextArea'
 import Button from '../general/Button'
+import './form.css'
 
 const Form = ({citas, setCitas}) => {
 
@@ -30,11 +31,11 @@ const Form = ({citas, setCitas}) => {
 
 
   return (
-    <div>
-        <h2>Crear mi cita</h2>
+    <div className='form__wrapper'>
+        <h2 className='form__titulo'>Crear mi cita</h2>
         
-        <form onSubmit={handleSubmit}>
-            <Input value={inputs} handleInput={handleInputs} label={"Nombre del comprador"} placeholder={"Nombre del comprador"} type={"text"} name={"comprador"}/>
+        <form className='form' onSubmit={handleSubmit}>
+            <Input value={inputs} handleInput={handleInputs} label={"Comprador"} placeholder={"Nombre del comprador"} type={"text"} name={"comprador"}/>
             <Input value={inputs} handleInput={handleInputs} label={"Modelo del sillon"} placeholder={"Modelo del sillon"} type={"text"} name={"modelo"}/>
             <Input value={inputs} handleInput={handleInputs} label={"Precio del envio"} placeholder={"Precio"} type={"number"} name={"precio"}/>
             <Input value={inputs} handleInput={handleInputs} label={"Direccion"} placeholder={"Olaya 1075"} type={"text"} name={"direccion"}/>

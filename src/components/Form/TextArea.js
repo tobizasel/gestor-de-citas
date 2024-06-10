@@ -2,9 +2,9 @@ import React from 'react'
 
 const TextArea = ({label, name, placeholder}) => {
   return (
-    <div>
+    <div className='form__input--wrapper'>
         <label for={name}>{label}</label>
-        <input name={name} placeholder={placeholder}/>
+        <input className='form__input' name={name} placeholder={placeholder}/>
     </div>
   )
 }
