@@ -12,7 +12,7 @@ function App() {
       <h1 className="titulo">ADMINISTRADOR DE NEGOCIOS DE SILLONES</h1>
       <div className='cuerpo'>
         <Form citas={citas} setCitas={setCitas}/>
-        <Citas citas={citas}/>
+        <Citas citas={citas} setCitas={setCitas}/>
       </div>
     </div>
   );

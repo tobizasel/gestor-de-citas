@@ -13,8 +13,10 @@ const Form = ({citas, setCitas}) => {
         direccion: "",
         fecha: "",
         hora: "",
-        info: ""
+        info: "",
     })
+
+    
 
     const handleInputs = (event) => {
         console.log(event.target.name, event.target.value);

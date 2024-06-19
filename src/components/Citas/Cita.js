@@ -1,6 +1,13 @@
 import React from 'react'
 
-const Cita = ({comprador, modelo, precio,direccion, fecha, hora}) => {
+const Cita = ({id,comprador, modelo, precio,direccion, fecha, hora, citas ,setCitas}) => {
+
+  console.log(id);
+
+  const eliminar = () => {
+    setCitas(citas.filter((cita) => cita.id === id));
+  }
+
   return (
     <div className='cita'>
         <h3 className='cita__nombre'>{comprador}</h3>
@@ -12,6 +19,7 @@ const Cita = ({comprador, modelo, precio,direccion, fecha, hora}) => {
             <h4 className='cita__lugar'>{direccion}</h4>
             <h4 className='cita__fecha'>{fecha} {hora}</h4>
         </div>
+        <button className='cita__eliminar' onClick={eliminar}>x</button>
     </div>
   )
 }
