@@ -3,19 +3,19 @@ import Cita from './Cita'
 import './citas.css'
 
 const Citas = ({citas, setCitas}) => {
-  console.log(citas);
 
-  const buscarPos = (cita) => {
-    console.log(citas.indexOf(cita));
-    return citas.indexOf(cita)
-  }
+  // const buscarPos = (cita) => {
+
+  //   console.log(citas.indexOf(cita));
+  //   return citas.indexOf(cita)
+  // }
 
   return (
     <div>
-      Listado de Citas
+      <h2 className='citas__titulo'>Listado de Citas</h2>
       {
         citas.map((cita, key) => ( 
-          <Cita key={key} id={buscarPos(cita)} comprador={cita.comprador} modelo={cita.modelo} precio={cita.precio} direccion={cita.direccion} fecha={cita.fecha} hora={cita.hora} citas={citas} setCitas={setCitas}/>
+          <Cita key={key} id={citas.indexOf(cita)} comprador={cita.comprador} modelo={cita.modelo} precio={cita.precio} direccion={cita.direccion} fecha={cita.fecha} hora={cita.hora} citas={citas} setCitas={setCitas}/>
           ))
       }
     </div>

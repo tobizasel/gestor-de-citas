@@ -1,8 +1,8 @@
 .form{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
-    color: #FFB5DA;
     flex-wrap: wrap;
 }
 
@@ -14,6 +14,7 @@
 
 .form__titulo{
     text-align: center;
+    color: #9b7c75;
 }
 
 .form__input--wrapper{
@@ -24,14 +25,34 @@
 }
 
 .form__input{
-    background-color: #F72798;
+    background-color: #d8e2dc;
     padding: .7rem 2rem;
     outline: none;
-    border: 3px solid #F72798; 
+    border: 3px solid #d8e2dc; 
     border-radius: 5px;
-    color: #FFB5DA;
+    color: #0d1b2a;
 }
 
 .form__input::placeholder{
-    color: #FFB5DA;
+    color: #0d1b2a;
+}
+
+.form__eliminar{ 
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 30px;
+    padding: 0px 15px;
+    text-shadow: rgb(0 0 0 / 25%) 0px 3px 8px;
+    background: linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%);
+    transition: all 0.5s ease 0s;
+}
+
+.form__eliminar:hover{
+    box-shadow: rgb(80 63 205 / 50%) 0px 1px 40px;
+    transition: all 0.1s ease 0s;
 }

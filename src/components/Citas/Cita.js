@@ -1,11 +1,11 @@
 import React from 'react'
 
+
 const Cita = ({id,comprador, modelo, precio,direccion, fecha, hora, citas ,setCitas}) => {
 
-  console.log(id);
-
+  
   const eliminar = () => {
-    setCitas(citas.filter((cita) => cita.id === id));
+    setCitas(citas.filter((cita) => citas.indexOf(cita) !== id));
   }
 
   return (
@@ -13,7 +13,7 @@ const Cita = ({id,comprador, modelo, precio,direccion, fecha, hora, citas ,setCi
         <h3 className='cita__nombre'>{comprador}</h3>
         <div className='cita__info'>
             <h4 className='cita__modelo'>{modelo}</h4>
-            <h4 className='cita__precio'>{precio}</h4>
+            <h4 className='cita__precio'>${precio}</h4>
         </div>
         <div className='cita__direccion'>
             <h4 className='cita__lugar'>{direccion}</h4>
@@ -25,3 +25,4 @@ const Cita = ({id,comprador, modelo, precio,direccion, fecha, hora, citas ,setCi
 }
 
 export default Cita
+

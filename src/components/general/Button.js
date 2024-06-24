@@ -2,7 +2,7 @@ import React from 'react'
 
 const Button = () => {
   return (
-    <button type='submit'>Button</button>
+    <button className='form__eliminar' type='submit'>Button</button>
   )
 }
 
