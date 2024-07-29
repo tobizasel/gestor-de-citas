@@ -9,6 +9,7 @@
     box-shadow: 10px 5px 5px 0 #0002;
     min-width: 20rem;
     margin-top: 2rem;
+    position: relative;
 }
 
 .citas__titulo{
@@ -32,6 +33,12 @@
 }
 
 .cita__eliminar{
-    background-color: in;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
 }
 
